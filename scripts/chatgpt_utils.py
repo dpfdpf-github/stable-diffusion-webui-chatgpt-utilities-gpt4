@@ -60,5 +60,5 @@ def normalize_text_for_chat_gpt(text):
     return normalized
 
 def get_chat_completion(messages, temperature):
-    completion = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=messages, temperature=temperature)
+    completion = openai.ChatCompletion.create(model="gpt-4", messages=messages, temperature=temperature)
     return completion.choices[0].message.content
